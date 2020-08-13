@@ -1,0 +1,20 @@
+version: '3'
+#mirai 的 cqhttp api 版本，linux环境的docker版本。
+services:
+  mirai-cqhttp:
+    container_name: mirai-cqhttp
+    image: scjtqs/mirai-cqhttp
+    restart: always
+    privileged: true
+    tty: true
+    ports:
+      - 5700:5700
+    volumes:
+      - ./mirai-data:/mirai
+      - ./device.json:/mirai/device.json:ro
+    environment:
+       QQ: '123456789'
+       PASSWORD: '123456789'
+       TOKEN: 'token'
+       POSTURL: 'https://www.qq.com'
+       SECRET: 'secret'
