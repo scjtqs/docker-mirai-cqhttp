@@ -1,5 +1,5 @@
 # docker-mirai-cqhttp
-mirai的docker包，带一个 jar的cqhttp插件
+mirai的docker包，带一个 jar的cqhttp插件  对应插件  [https://github.com/yyuueexxiinngg/cqhttp-mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)
 
 ## 关于安全验证
 你可以用自动生成的mirai-data中的device.json  配置在本地跑一遍，认证一下。
